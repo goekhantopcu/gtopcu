@@ -1,7 +1,5 @@
 <template>
-  <div class="grid grid-cols-6 bg-white bg-opacity-[3%] h-[9rem] w-screen p-6 relative">
-    <div class="absolute bg-cyan-500 opacity-40 blur-2xl h-[2rem] w-[8rem] top-1/2 left-1/8"></div>
-
+  <div class="grid grid-cols-6 bg-white bg-opacity-[3%] h-[9rem] w-screen p-6">
     <div class="col-span-2 flex flex-col justify-center items-center" v-for="company in companies" :key="company.id">
       <a :href="company.url" target="_blank" :title="company.alt">
         <img :src="company.cover"
