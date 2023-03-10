@@ -5,18 +5,18 @@
         <div class="bg-[#454545] flex items-center justify-center rounded-full h-[2.5rem] w-[2.5rem]">
           <font-awesome-icon icon="fa-solid fa-envelope" class="text-white" />
         </div>
-        <span class="text-white">kontakt@gtopcu.de</span>
+        <a href="mailto:kontakt@goekhantopcu.de" class="text-white">kontakt@goekhantopcu.de</a>
       </div>
       <div class="flex justify-center items-center gap-6">
-        <a class="text-white">LinkedIn</a>
-        <a class="text-white">GitHub</a>
-        <a class="text-white">Instagram</a>
+        <a href="https://www.linkedin.com/in/goekhantopcu" target="_blank" class="text-white">LinkedIn</a>
+        <a href="https://github.com/goekhantopcu" target="_blank" class="text-white">GitHub</a>
+        <a href="https://www.instagram.com/goekhantopcu" target="_blank" class="text-white">Instagram</a>
       </div>
     </div>
   </header>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const routes = [
   {
     name: 'Erfahrung',
