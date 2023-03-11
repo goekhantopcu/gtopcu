@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col flex-grow justify-start items-center">
-    <img src="../assets/navicon.png" alt="Profile Picture" class="rounded-full h-[9rem] w-[9rem]"/>
-    <h3 class="text-[2rem] title-text-color">Software-Entwickler</h3>
+  <div class="flex flex-col items-center">
+    <img src="../assets/navicon.png" title="Profile Picture" alt="Profile Picture" class="hero-image"/>
+    <h3 class="hero-text">Software-Entwickler</h3>
   </div>
 </template>
 
@@ -9,7 +9,14 @@
 </script>
 
 <style>
-.title-text-color {
-  @apply bg-clip-text bg-gradient-to-r from-white to-gray-500 font-bold uppercase text-transparent
+.hero-image {
+  @apply rounded-full h-[9rem] w-[9rem] select-none
+}
+
+.hero-text {
+  @apply bg-clip-text bg-gradient-to-r from-white to-gray-500 text-transparent
+  text-[1.5rem] sm:text-[2rem]
+  font-bold uppercase
+  select-none
 }
 </style>

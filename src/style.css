@@ -31,7 +31,7 @@
 }
 
 html, body {
-    font-family: 'Poppins', sans-serif;
+    @apply bg-[#161616] h-screen w-screen
 }
 
 .hover-text {
