@@ -15,19 +15,19 @@
 const companies = [
   {
     id: 'griefergames',
-    url: 'http://griefergames.net',
+    url: 'https://griefergames.net',
     cover: 'griefergames.png',
     alt: 'GrieferGames'
   },
   {
     id: 'telekom',
-    url: 'http://telekom.de',
+    url: 'https://telekom.de',
     cover: 'telekom.png',
     alt: 'Deutsche Telekom AG'
   },
   {
     id: 'exxeta',
-    url: 'http://exxeta.com',
+    url: 'https://exxeta.com',
     cover: 'exxeta.png',
     alt: 'Exxeta AG'
   }
