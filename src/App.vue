@@ -16,7 +16,7 @@
 import NavigationBar from "./components/layout/PageNavigation.vue"
 import PageFooter from "./components/layout/PageFooter.vue"
 import PageHero from "./components/layout/PageHero.vue"
-import CompanyList from "./components/CompanyList.vue"
+import CompanyList from "./components/Companies.vue"
 import {Skill} from "./models/skill.js"
 import SelfDescription from "./components/SelfDescription.vue";
 
