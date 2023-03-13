@@ -23,12 +23,15 @@ const properties = defineProps<{
   rounded-lg
   text-white hover:text-[#FD8952] select-none
   transition ease-in-out duration-500
+  hover:scale-105
   p-6
   h-[9rem] w-[18rem] sm:w-[14rem] lg:w-[18rem]
 }
+
 .skill-title {
   @apply text-[1rem] sm:text-[0.75rem] lg:text-[1rem]
 }
+
 .skill-description {
   @apply text-[0.75rem]
 }
