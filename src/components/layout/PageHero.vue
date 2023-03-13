@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center">
-    <img src="../assets/navicon.png" title="Profile Picture" alt="Profile Picture" class="hero-image"/>
+    <img src="../../assets/navicon.png" title="Profile Picture" alt="Profile Picture" class="hero-image"/>
     <h3 class="hero-text">Software-Entwickler</h3>
   </div>
 </template>

@@ -13,9 +13,9 @@
 </template>
 
 <script setup lang="ts">
-import NavigationBar from "./components/PageNavigation.vue"
-import PageFooter from "./components/PageFooter.vue"
-import PageHero from "./components/PageHero.vue"
+import NavigationBar from "./components/layout/PageNavigation.vue"
+import PageFooter from "./components/layout/PageFooter.vue"
+import PageHero from "./components/layout/PageHero.vue"
 import CompanyList from "./components/CompanyList.vue"
 import {Skill} from "./models/skill.js"
 import SelfDescription from "./components/SelfDescription.vue";
