@@ -17,36 +17,7 @@ import NavigationBar from "./components/layout/PageNavigation.vue"
 import PageFooter from "./components/layout/PageFooter.vue"
 import PageHero from "./components/layout/PageHero.vue"
 import CompanyList from "./components/Companies.vue"
-import {Skill} from "./models/skill.js"
 import SelfDescription from "./components/SelfDescription.vue";
-
-const skills: Skill[] = [
-  {
-    title: 'Java',
-    percentage: 95
-  },
-  {
-    title: 'Kotlin',
-    percentage: 80
-  },
-  {
-    title: 'Typescript',
-    percentage: 75
-  },
-  {
-    title: 'Javascript',
-    percentage: 75
-  },
-  {
-    title: 'VueJS',
-    percentage: 75
-  },
-  {
-    title: 'Angular',
-    percentage: 85
-  }
-]
-
 </script>
 
 <style scoped>
