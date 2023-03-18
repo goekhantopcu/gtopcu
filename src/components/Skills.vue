@@ -33,7 +33,7 @@ const skills: SkillModel[] = [
 <style scoped>
 .title {
   @apply bg-clip-text bg-gradient-to-r from-white to-gray-500 text-transparent
-  text-[1.5rem] sm:text-[2rem]
+  text-[1.5rem]
   font-bold uppercase
   select-none
 }
