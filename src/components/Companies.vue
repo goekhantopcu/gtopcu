@@ -1,37 +1,49 @@
 <template>
-  <div class="grid grid-cols-6 bg-white bg-opacity-[3%] h-[9rem] min-w-full p-6">
-    <div class="col-span-2 flex flex-col justify-center items-center" v-for="company in companies" :key="company.id">
-      <a :href="company.url" target="_blank" :title="company.alt">
-        <img :src="company.cover"
-             class="object-cover h-[1.25rem] sm:h-[2.5rem] md:h-[3rem] lg:h-[3.5rem] hover:cursor-pointer grayscale hover:grayscale-0 ease-in-out duration-700 hover:origin-center hover:scale-110"
-             :title="company.alt"
-             :alt="company.alt">
-      </a>
+  <div class="flex flex-col justify-center items-center gap-3">
+    <h1 class="title">Companies</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center items-center gap-3 mx-12 md:mx-6">
+      <Company v-for="company in companies" :key="company.name" :company="company" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const companies = [
+import Company from "./Company.vue";
+import {CompanyModel} from "../models/company-model";
+
+const companies: CompanyModel[] = [
   {
-    id: 'griefergames',
-    url: 'https://griefergames.net',
-    cover: 'griefergames.png',
-    alt: 'GrieferGames'
+    name: 'ABC Media GmbH',
+    job: 'Software Developer',
+    image: 'griefergames.png',
+    description: 'Implementierung von verteilten Systemen und Microservices mit Spring Boot',
+    tags: ['Spring Boot', 'Java', 'Kotlin', 'Hazelcast IMDG', 'PostgreSQL', 'Docker', 'REST', 'Hibernate'],
+    color: '#FF0000'
   },
   {
-    id: 'telekom',
-    url: 'https://telekom.de',
-    cover: 'telekom.png',
-    alt: 'Deutsche Telekom AG'
+    name: 'Deutsche Telekom AG',
+    job: 'Software Developer',
+    image: 'telekom.png',
+    description: 'Entwicklung von Automatisierungs-Tools für das Fixed Access Network',
+    tags: ['NestJS', 'Angular', 'VueJS', 'TypeScript', 'Python', 'REST', 'TypeORM', 'AutoMapper'],
+    color: '#E30075'
   },
   {
-    id: 'exxeta',
-    url: 'https://exxeta.com',
-    cover: 'exxeta.png',
-    alt: 'Exxeta AG'
+    name: 'EXXETA AG',
+    job: 'Software Developer',
+    image: 'exxeta.png',
+    description: 'Erstellung einer Benutzeroberfläche zur Ladestandsverwaltung von E-Autos',
+    tags: ['Java', 'Spring Boot', 'Docker', 'PostgreSQL', 'Angular', 'GraphQL', 'Apollo', 'TypeScript'],
+    color: '#FFFFFF'
   }
 ]
 </script>
 
-<style></style>
+<style scoped>
+.title {
+  @apply bg-clip-text bg-gradient-to-r from-white to-gray-500 text-transparent
+  text-[1.5rem]
+  font-bold uppercase
+  select-none
+}
+</style>

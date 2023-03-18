@@ -4,7 +4,7 @@
     <main class="flex-grow">
       <div class="flex flex-col gap-12 justify-start items-center">
         <PageHero/>
-        <CompanyList/>
+        <Companies />
         <Skills />
       </div>
     </main>
@@ -16,10 +16,8 @@
 import NavigationBar from "./components/layout/PageNavigation.vue"
 import PageFooter from "./components/layout/PageFooter.vue"
 import PageHero from "./components/layout/PageHero.vue"
-import CompanyList from "./components/Companies.vue"
 import Skills from "./components/Skills.vue";
+import Companies from "./components/Companies.vue";
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
