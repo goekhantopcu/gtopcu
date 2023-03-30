@@ -4,6 +4,9 @@
       <font-awesome-icon icon="fa-solid fa-envelope" />
     </a>
     <div class="flex justify-between items-center gap-3 sm:gap-6">
+      <a href="https://www.npmjs.com/~goekhantopcu" target="_blank" class="nav-item" title="npmjs">
+        <font-awesome-icon icon="fa-brands fa-npm" />
+      </a>
       <a href="https://www.linkedin.com/in/goekhantopcu" target="_blank" class="nav-item" title="LinkedIn">
         <font-awesome-icon icon="fa-brands fa-linkedin-in" />
       </a>

@@ -10,10 +10,10 @@ import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import {faEnvelope, faCode, faCar, faHouseLaptop} from '@fortawesome/free-solid-svg-icons'
-import {faInstagram, faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons'
+import {faInstagram, faLinkedinIn, faGithub, faNpm} from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faEnvelope, faLinkedinIn, faGithub, faInstagram, faCode, faCar, faHouseLaptop)
+library.add(faEnvelope, faLinkedinIn, faGithub, faInstagram, faCode, faCar, faHouseLaptop, faNpm)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)
