@@ -1,33 +1,49 @@
 <template>
-  <div class="company" :title="company.name">
-    <div class="flex justify-start items-center gap-2">
-      <img :src="company.image" :alt="company.name" class="h-[1.6rem]">
-      <div class="flex flex-col">
-        <h6 class="text-sm font-bold">{{ company.name }}</h6>
-        <h6 class="text-xs">{{ company.job }}</h6>
+  <div class="company-card" @click="companyStore.setCompany(company)">
+    <div class="company-card-header">
+      <img :src="company.image" :alt="company.name" class="h-6" />
+      <div class="flex flex-col justify-start items-start">
+        <span class="company-name">{{ company.name }}</span>
+        <span class="company-job">{{ company.job }}</span>
       </div>
     </div>
-    <span class="text-[0.75rem]">{{ company.description }}</span>
+    <span class="company-description">{{ company.description }}</span>
   </div>
 </template>
 
 <script setup lang="ts">
 import {CompanyModel} from "../models/company-model";
+import useCompanyStore from "../stores/company-store";
 
-const properties = defineProps<{
+const props = defineProps<{
   company: CompanyModel
 }>()
+
+const companyStore = useCompanyStore()
 </script>
 
-<style scoped>
-.company {
-  @apply flex flex-col justify-between items-start gap-3
-  bg-white bg-opacity-[3%]
-  rounded-lg
-  text-white select-none
-  transition ease-in-out duration-500
-  hover:scale-105
-  p-6
-  h-full w-full
+<style>
+.company-card {
+  @apply flex flex-col justify-start items-start gap-3
+  py-3 px-4
+  bg-white bg-opacity-10 rounded-lg
+  min-h-full
+  cursor-pointer
+}
+
+.company-name {
+  @apply text-xs text-930-100
+}
+
+.company-job {
+  @apply text-xs text-930-100 font-bold
+}
+
+.company-description {
+  @apply text-xs text-930-100
+}
+
+.company-card-header {
+  @apply flex flex-col md:flex-row gap-3 justify-center items-start md:items-center
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-transparent flex justify-between items-center px-6 sm:px-12 py-6 w-full">
+  <header class="bg-transparent flex justify-between items-center w-full">
     <a href="mailto:kontakt@goekhantopcu.de" class="nav-item" title="E-Mail">
       <font-awesome-icon icon="fa-solid fa-envelope" />
     </a>

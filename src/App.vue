@@ -1,23 +1,33 @@
 <template>
-  <div class="flex flex-col justify-between h-screen w-screen">
-    <NavigationBar/>
-    <main class="flex-grow">
-      <div class="flex flex-col gap-12 justify-start items-center">
-        <PageHero/>
-        <Companies />
-        <Skills />
-      </div>
+  <div class="app-container">
+    <TheNavigation/>
+    <main class="app-main">
+      <TheHero/>
+      <Companies/>
+      <CompanyDetail />
     </main>
-    <PageFooter/>
+    <TheFooter/>
   </div>
 </template>
 
 <script setup lang="ts">
-import NavigationBar from "./components/layout/PageNavigation.vue"
-import PageFooter from "./components/layout/PageFooter.vue"
-import PageHero from "./components/layout/PageHero.vue"
-import Skills from "./components/Skills.vue";
+import TheNavigation from "./components/TheNavigation.vue"
+import TheFooter from "./components/TheFooter.vue"
+import TheHero from "./components/TheHero.vue"
 import Companies from "./components/Companies.vue";
+import CompanyDetail from "./components/CompanyDetail.vue";
 </script>
 
-<style scoped></style>
+<style>
+.app-container {
+  @apply flex flex-col justify-between
+  min-h-screen w-screen
+  bg-930-400
+  pt-6
+  px-10 sm:px-6 md:px-6 lg:px-36 xl:px-64 2xl:px-96
+}
+
+.app-main {
+  @apply flex-grow flex flex-col justify-start items-center gap-3 pt-6
+}
+</style>
